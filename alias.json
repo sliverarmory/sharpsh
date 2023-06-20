@@ -1,0 +1,25 @@
+{
+    "name": "sharpsh",
+    "version": "v0.0.0",
+    "command_name": "sharpsh",
+    "original_author": "thelikes",
+    "repo_url": "https://github.com/sliverarmory/sharpsh",
+    "help": "C# .Net Framework program that uses RunspaceFactory for Powershell command execution.",
+    "entrypoint": "Main",
+    "allow_args": true,
+    "default_args": "-h",
+    "is_reflective": false,
+    "is_assembly": true,
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "sharpsh.exe"
+      },
+      {
+        "os": "windows",
+        "arch": "386",
+        "path": "sharpsh.exe"
+      }
+    ]
+  }
