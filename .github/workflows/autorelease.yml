@@ -40,7 +40,7 @@ jobs:
         $Version = git.exe describe --tags --abbrev=0
         $Version = "`"$Version`""
         Get-Content -Path alias.json | .\jq.exe ".version |= `"$Version`"" > .\sharpsh\compiled\alias.json
-        cd ..\sharpsh\compiled\
+        cd .\sharpsh\compiled\
         tar.exe -czvf ..\..\sharpsh.tar.gz .\alias.json .\sharpsh.exe
     - name: Sign Package
       run: |
